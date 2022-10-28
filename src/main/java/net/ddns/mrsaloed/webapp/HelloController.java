@@ -9,7 +9,7 @@ import java.io.IOException;
 
 @RestController
 public class HelloController {
-    private static final String REDIRECT = "192.168.0.168";
+    private static final String REDIRECT = "https://192.168.3.150";
 
     @GetMapping("/hello")
     public String hello(@RequestParam(required = false) String name) {
@@ -28,6 +28,6 @@ public class HelloController {
     public RedirectView myMethod (RedirectAttributes attributes) {
         attributes.addFlashAttribute("flashAttribute", "forward");
         attributes.addAttribute("attribute", "forward");
-        return new RedirectView("192.168.0.136");
+        return new RedirectView(REDIRECT);
     }
 }
