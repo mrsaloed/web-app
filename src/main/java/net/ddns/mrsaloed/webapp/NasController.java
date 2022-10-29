@@ -16,7 +16,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/nas")
 public class NasController {
-    private final static String NAS_IP = "http://rsreu.ru";
+    private final static String NAS_IP = "https://www.wikipedia.org/";
     private final RestTemplate restTemplate;
     public NasController (RestTemplateBuilder restTemplateBuilder) {
         this.restTemplate = restTemplateBuilder.build();
