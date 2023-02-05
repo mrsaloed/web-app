@@ -1,2 +1,5 @@
 config:
-  name: "app1"
+  name: "app2"
+
+server:
+  port: 8081
